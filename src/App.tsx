@@ -41,22 +41,22 @@ const App = () => {
   const [board, setBoard] = useState(initialBoard);
   const [player, setPlayer] = useState('X');
 
-  const handleClick = (row: number, col: number) => {
-  };
-
   const restartGame = () => {
+    // to-do
   };
 
   return (
     <Container>
       <Board>
-        {board.map((row, rowIndex) => (
-          row.map((cell, colIndex) => (
-            <Cell key={`${rowIndex}-${colIndex}`} onClick={() => handleClick(rowIndex, colIndex)}>
-              {cell}
-            </Cell>
-          ))
-        ))}
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
       </Board>
       <Message>
         O jogador "" venceu!
